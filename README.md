@@ -21,7 +21,15 @@ Code Used for Preprocessing
 
 **Compiling, Training, and Evaluating the Model**
 *How many neurons, layers, and activation functions did you select for your neural network model, and why?*
-*Were you able to achieve the target model performance?*
-*What steps did you take to try and increase model performance?*
+* I selected 120 neurons with the activation function of sigmoid for my first layer. My second hidden layer had 50 neurons with a ReLu activation function and my third hidden layer had 18 neurons with a Relu activation function. I decided to change the activation function for the first layer to see if varied activations increased the accuracy, it did not; The accuracy was 35%. Therefore, my next two models only used one activation function for the input.
+* My second model I used three hidden layers with 80, 30, and 10 neurons. The activation function was ReLu for all three. The accuracy went up significantly with a 72.8%. I decided to leave the neurons the same and change the activation for all three input values to TanH to see if this would increase the accuracy even further.
+* My third model had three hidden layres with 80, 30 and 10 neurons with the activation function TanH for all three. The accuracy percentage stayed relatively the same as the previous model, 72.5% accuracy. 
 
-Code Used for Compiling, Training, and Evaluating Model
+*Were you able to achieve the target model performance?*
+None of my models met the target model performance. 
+
+*What steps did you take to try and increase model performance?*
+I first made all the activation functions the same to see if this affected the accuracy percentage, which it did. The next step I took was to change the activation function I used. Using the same activation function for all three inputs had a strong impact on the accuracy, but the change in the activation function had an insignificant impact. 
+
+## Summary
+I removed unnecessary data and adjusted neurons as well as activation functions, but was unable to meet the 75% accuracy target. My second model had the highest accuracy percentage with a 72.8%. A Random Forest Model would be my recommendation for a better model. This model would randomly sample the preprocessed data and build several smaller, simplier decision trees. The benefit of this model is that it can be used to rank the value of the input variables increasing its ability to have a higher accuracy percentage for measuring risk. 
